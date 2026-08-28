@@ -89,7 +89,7 @@ Model – If the information is valid, the model is used to communicate with the
 Database – The student's information is stored in the database.
 Response – Laravel sends a response back to the browser, such as a success message, redirect, or validation error.
 
-##Validation Rules
+###Validation Rules##########
 
 Validation rules are important in a Student Registration System because they make sure that the information entered by the user is correct, complete, and safe before it is stored in the database. Laravel provides different validation rules that can be applied to registration forms.
 
@@ -109,7 +109,7 @@ Image Upload Path Incorrect – Another problem was related to uploading student
 Database Migration Failed – A database migration also encountered an error. This can happen when there are incorrect column definitions, existing tables with conflicting names, or problems with relationships between tables. Because of the failed migration, the required database structure was not created correctly.
 Storage Link Missing – The uploaded images were also not accessible through the browser because the Laravel storage link had not been properly created. The files existed in the storage directory, but the public application could not access them through the expected URL.
 
- ##Solutions
+ ##Solutions########
 
 Each problem was solved by checking the Laravel configuration, code, and database structure and then making the necessary corrections.
 
@@ -118,7 +118,7 @@ Fixing the Image Upload Path – The image upload code was checked to make sure 
 Fixing the Database Migration – The migration file was checked for incorrect table names, column definitions, and database relationships. Existing conflicting tables were removed or adjusted when necessary, and the migration was run again. After correcting the errors, the required tables and columns were successfully created.
 Creating the Storage Link – The missing storage link was solved by creating Laravel's symbolic link between the public directory and the storage directory. The php artisan storage:link command was used for this purpose. After creating the link, files stored in Laravel's public storage location could be accessed by the web application.
 
-##Reflection
+##Reflection#######
 
 This activity helped me understand why validation is one of the most important parts of a registration system. When users enter information into a form, there is no guarantee that all the information they provide will be correct. Users can accidentally enter incomplete information, use the wrong format, or even intentionally enter invalid data. Because of this, validation is necessary to make sure that the information being submitted follows the requirements of the system. I learned that validation is not only about checking if a field is empty, but it can also check the format, length, type, uniqueness, and other requirements of the data. Proper validation helps prevent incorrect information from being stored in the database and makes the system more reliable.
 
@@ -130,7 +130,7 @@ The activity also made me realize the importance of file security in web applica
 
 Finally, I learned that registration systems are not only useful for school projects. They are commonly used in real-world enterprise software. Companies use registration and account systems to manage employees, customers, members, applicants, and other users. These systems may also connect to databases, authentication systems, reporting tools, and other business applications. Overall, this activity gave me a better understanding of how Laravel processes user information and why validation, security, and proper data management are necessary when developing real-world web applications.
 
-##References
+##References#########
 
 Laravel. (n.d.). Laravel documentation. https://laravel.com/docs
 
